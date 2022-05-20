@@ -59,7 +59,7 @@ responsestatus: 1 OR 0
 ```
 esn: 84:f3:eb:0a:1d:7e, relay1: 0, rtc:0
 ```
-## Get ES NNumber
+## Get ESN Number
 **API:** /api/VehicleCharging/GetESNNumber
 
 **Method**: POST
@@ -83,9 +83,9 @@ No Need to pass any parameter
         "StopMachineMessage": "Machine is currently stoped"
       }]
   }
-  
+```  
 **NOTE** : from this API you will get list of ESN. IsMachineRunning is 1 then you get in StopMachineMessage equal Machine is Running
-```
+
 ## Relay On By ESN
 **API:** /api/VehicleCharging/RelayOnByESN
 
@@ -98,9 +98,8 @@ No Need to pass any parameter
   "RelayMin": 0,
   "Flag": 0
 }
-  
-**NOTE**:  you will pass 1 in flag then update relay1 = 1 (also set min which you have passed in RelayMin) and you are passing 0 then relay1 is set 0.
 ```
+**NOTE**:  you will pass 1 in flag then update relay1 = 1 (also set min which you have passed in RelayMin) and you are passing 0 then relay1 is set 0.
 
 ### Response
 ```
@@ -138,9 +137,8 @@ No Need to pass any parameter
     "relay1": false
   }]
 }
-  
-**NOTE** : Relay is 0(off) then we get relay1:false or if Relay is 1(ON) then we get true.
 ```
+**NOTE** : Relay is 0(off) then we get relay1:false or if Relay is 1(ON) then we get true.
 
 ## Get Acknowledge
 **API:** /api/VehicleCharging/GetAcknowledge
@@ -148,9 +146,9 @@ No Need to pass any parameter
 **Method**: POST
 
 ### Request
-```
-**NOTE**: pass ESN in query string like below
 
+**NOTE**: pass ESN in query string like below
+```
 `END Point`/api/VehicleCharging/GetAcknowledge?ESN= 9c:9c:1f:25:05:40
 ```
 
@@ -164,6 +162,5 @@ No Need to pass any parameter
     "status": 0
   }]
 }
-
-(NOTE : in this API we get status True or false (0 or 1))
 ```
+**NOTE** : in this API we get status True or false (0 or 1)
