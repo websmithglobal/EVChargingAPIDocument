@@ -108,9 +108,8 @@ No Need to pass any parameter
     "IV": "N/A",
     "Message": "Relay Is Stopped"
   }
-  
-**NOTE**: You will pass 1 in IsMachineRunning then message will be this Relay Is Start
 ```
+**NOTE**: You will pass 1 in IsMachineRunning then message will be this Relay Is Start
 
 ## Get Relay Status
 **API:** /api/VehicleCharging/GetRelayStatus
