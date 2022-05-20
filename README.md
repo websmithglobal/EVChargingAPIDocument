@@ -146,9 +146,9 @@ No Need to pass any parameter
 ### Request
 
 **NOTE**: pass ESN in query string like below
-```
-`END Point`/api/VehicleCharging/GetAcknowledge?ESN= 9c:9c:1f:25:05:40
-```
+
+**END POINT**/api/VehicleCharging/GetAcknowledge?ESN= 9c:9c:1f:25:05:40
+
 
 ### Response
 ```
