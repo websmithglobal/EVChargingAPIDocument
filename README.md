@@ -121,9 +121,8 @@ No Need to pass any parameter
 {
   "ESN": "84:f3:eb:0a:1d:7e"
 }
-
-**NOTE**:  you will pass 1 in flag then update relay1 = 1 (also set min which you have passed in RelayMin) and you are passing 0 then relay1 is set 0.
 ```
+**NOTE**:  you will pass 1 in flag then update relay1 = 1 (also set min which you have passed in RelayMin) and you are passing 0 then relay1 is set 0.
 
 ### Response
 ```
