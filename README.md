@@ -10,8 +10,8 @@ This API uses POST request to communicate and HTTP response codes to indenticate
   1: Success<br/>
   0: Bad request/Data Not Found
 
-# VehicleCharging API
-## `API: /api/VehicleCharging/VehicleCharging`
+## VehicleCharging API
+### `API: /api/VehicleCharging/VehicleCharging`
   `Method: POST`
 
 ### Request
@@ -33,7 +33,7 @@ This API uses POST request to communicate and HTTP response codes to indenticate
   
   (NOTE : if we get 1 then success or we get 0 then record not insert)
 
-## `API: /api/VehicleCharging/HeartBeatAPI`
+### `API: /api/VehicleCharging/HeartBeatAPI`
   `Method: POST`
 
 ### Request
@@ -46,7 +46,7 @@ This API uses POST request to communicate and HTTP response codes to indenticate
   esn: 84:f3:eb:0a:1d:7e, relay1: 0, rtc:0 <br/>
   (NOTE : if you are pass rr = 1 then status change and set 0 (if rr status is already 1 ))
 
-## `API: /api/VehicleCharging/GetESNNumber`
+### `API: /api/VehicleCharging/GetESNNumber`
   `Method: POST`
 
 ### Request
@@ -68,7 +68,7 @@ This API uses POST request to communicate and HTTP response codes to indenticate
   
 (NOTE : from this API you will get list of ESN. IsMachineRunning is 1 then you get in StopMachineMessage equal Machine is Running)
 
-## `API: /api/VehicleCharging/RelayOnByESN`
+### `API: /api/VehicleCharging/RelayOnByESN`
   `Method: POST`
 
 ### Request
@@ -89,7 +89,7 @@ This API uses POST request to communicate and HTTP response codes to indenticate
   
 (NOTE : You will pass 1 in IsMachineRunning then message will be this Relay Is Start)
 
-## `API: /api/VehicleCharging/GetRelayStatus`
+### `API: /api/VehicleCharging/GetRelayStatus`
   `Method: POST`
 
 ### Request
@@ -113,7 +113,7 @@ This API uses POST request to communicate and HTTP response codes to indenticate
   
 (NOTE : Relay is 0(off) then we get relay1:false or if Relay is 1(ON) then we get true.)
 
-## `API: /api/VehicleCharging/GetAcknowledge`
+### `API: /api/VehicleCharging/GetAcknowledge`
   `Method: POST`
 
 ### Request
