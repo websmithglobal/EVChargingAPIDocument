@@ -59,14 +59,18 @@ responsestatus: 1 OR 0
 ```
 esn: 84:f3:eb:0a:1d:7e, relay1: 0, rtc:0
 ```
+## Get ES NNumber
+**API:** /api/VehicleCharging/GetESNNumber
 
-### `API: /api/VehicleCharging/GetESNNumber`
-  `Method: POST`
+**Method**: POST
 
 ### Request
-  No Need to pass any parameter
+```
+No Need to pass any parameter
+```
 
 ### Response
+```
   {
     "Code": 1,
     "IV": "N/A",
@@ -81,7 +85,7 @@ esn: 84:f3:eb:0a:1d:7e, relay1: 0, rtc:0
   }<br/>
   
 (NOTE : from this API you will get list of ESN. IsMachineRunning is 1 then you get in StopMachineMessage equal Machine is Running)
-
+```
 ### `API: /api/VehicleCharging/RelayOnByESN`
   `Method: POST`
 
