@@ -6,45 +6,59 @@ This API uses POST request to communicate and HTTP response codes to indenticate
   http://electricvehiclechargingapi.malakconnect.com/
 
 ## Response Codes
-  
-  1: Success<br/>
-  0: Bad request/Data Not Found
+```
+1: Success
+0: Bad request/Data Not Found
+```
 
-## VehicleCharging API
-### `API: /api/VehicleCharging/VehicleCharging`
-  `Method: POST`
+## Vehicle Charging
+**API:** /api/VehicleCharging/VehicleCharging
+
+**Method**: POST
+
+**NOTE** : if we get 1 then success or we get 0 then record not insert
 
 ### Request
-  {
-    "ElectricVehicleChargingIDP": "00000000-0000-0000-0000-000000000000",
-    "esn": "string",
-    "voltage": 0,
-    "current": 0,
-    "power": 0,
-    "energy": 0,
-    "frequency": 0,
-    "power_factor": 0,
-    "status": 0,
-    "reset": 0,
-    "timestamp": "2022-05-19T13:17:02.552Z"
-  }
+```
+{
+  "ElectricVehicleChargingIDP": "00000000-0000-0000-0000-000000000000",
+  "esn": "string",
+  "voltage": 0,
+  "current": 0,
+  "power": 0,
+  "energy": 0,
+  "frequency": 0,
+  "power_factor": 0,
+  "status": 0,
+  "reset": 0,
+  "timestamp": "2022-05-19T13:17:02.552Z"
+}
+```
+
 ### Response
-  responsestatus: 1 OR 0 <br/>
-  
-  (NOTE : if we get 1 then success or we get 0 then record not insert)
+```
+responsestatus: 1 OR 0
+```
 
-### `API: /api/VehicleCharging/HeartBeatAPI`
-  `Method: POST`
+## Heart Beat
+**API:** /api/VehicleCharging/HeartBeatAPI
+
+**Method**: POST
+
+**NOTE** : if you are pass rr = 1 then status change and set 0 (if rr status is already 1
 
 ### Request
-  {
+```
+{
     "esn": "84:f3:eb:0a:1d:7e",
     "rr": 0
-  }
+}
+```
 
 ### Response
-  esn: 84:f3:eb:0a:1d:7e, relay1: 0, rtc:0 <br/>
-  (NOTE : if you are pass rr = 1 then status change and set 0 (if rr status is already 1 ))
+```
+esn: 84:f3:eb:0a:1d:7e, relay1: 0, rtc:0
+```
 
 ### `API: /api/VehicleCharging/GetESNNumber`
   `Method: POST`
